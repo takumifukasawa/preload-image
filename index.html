@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+
+  <style>
+    img {
+      border: none;
+    }
+    img, div {
+      width: 300px;
+      height: 200px;
+      float: left;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+    }
+    div {
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <img data-src="./images/pic1.jpg" data-preload="preload-img-pc" /> 
+  <img data-src="./images/pic2.jpg" data-preload="preload-img-sp" /> 
+  <div data-src="./images/pic3.jpg" data-preload="preload-bg-pc"></div>
+  <div data-src="./images/pic4.jpg" data-preload="preload-bg-sp"></div>
+
+  <script src="https://code.createjs.com/preloadjs-0.6.2.min.js"></script>
+  <script src="./Preload.js"></script>
+</body>
+</html>
